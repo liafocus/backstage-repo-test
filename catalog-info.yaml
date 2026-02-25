@@ -5,7 +5,7 @@ metadata:
   description: Company-wide documentation — onboarding, architecture, API guides, and runbooks
   annotations:
     backstage.io/techdocs-ref: dir:.
-    github.com/project-slug: liafocus/company-docs
+    github.com/project-slug: liafocus/backstage-repo-test
 spec:
   type: documentation
   lifecycle: production
