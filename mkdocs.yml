@@ -1,0 +1,18 @@
+site_name: Company Documentation
+site_description: Internal documentation for the engineering team
+
+plugins:
+  - techdocs-core
+
+nav:
+  - Home: index.md
+  - Onboarding:
+      - Overview: onboarding/index.md
+      - Getting Started: onboarding/getting-started.md
+  - Architecture:
+      - Overview: architecture/index.md
+  - API:
+      - Overview: api/index.md
+  - Runbooks:
+      - Overview: runbooks/index.md
+      - Incident Response: runbooks/incident-response.md

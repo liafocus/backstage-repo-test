@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: company-docs
+  description: Company-wide documentation — onboarding, architecture, API guides, and runbooks
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: liafocus/company-docs
+spec:
+  type: documentation
+  lifecycle: production
+  owner: guests
