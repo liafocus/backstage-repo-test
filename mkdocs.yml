@@ -3,6 +3,8 @@ site_description: Internal documentation for the engineering team
 
 plugins:
   - techdocs-core
+  - pdf-export:
+      combined: false
 
 nav:
   - Home: index.md
