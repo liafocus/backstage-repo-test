@@ -1,0 +1,122 @@
+@media print {
+  /* Completely remove all non-content elements from flow */
+  .md-header,
+  .md-footer,
+  .md-tabs,
+  .md-top,
+  .md-banner,
+  .md-dialog,
+  .md-skip,
+  .md-overlay,
+  [data-md-component="announce"],
+  [data-md-toggle] {
+    display: none !important;
+    position: absolute !important;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Force sidebar out of flow — this is the main blank-page culprit */
+  .md-sidebar,
+  .md-sidebar--primary,
+  .md-sidebar--secondary {
+    display: none !important;
+    position: absolute !important;
+    width: 0 !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    overflow: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Reset body — remove min-height that fills a blank first page */
+  html, body {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    min-height: 0 !important;
+    height: auto !important;
+  }
+
+  .md-container {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    min-height: 0 !important;
+  }
+
+  .md-main {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    min-height: 0 !important;
+  }
+
+  .md-main__inner {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .md-grid {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+
+  /* Content area — fill the whole page */
+  .md-content {
+    display: block !important;
+    margin: 0 !important;
+    padding: 12px !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .md-content__inner {
+    margin: 0 !important;
+  }
+
+  /* Tables */
+  .md-typeset table:not([class]) {
+    display: table !important;
+    width: 100% !important;
+    border-collapse: collapse !important;
+  }
+
+  .md-typeset table:not([class]) th,
+  .md-typeset table:not([class]) td {
+    padding: 6px 10px !important;
+    border: 1px solid #ccc !important;
+  }
+
+  .md-typeset__table {
+    display: block !important;
+    overflow: visible !important;
+  }
+
+  /* Code blocks */
+  .md-typeset pre {
+    white-space: pre-wrap !important;
+    background: #f5f5f5 !important;
+    padding: 10px !important;
+    border: 1px solid #ddd !important;
+    page-break-inside: avoid !important;
+  }
+
+  .md-typeset code {
+    background: #f5f5f5 !important;
+  }
+
+  /* Avoid page breaks in the middle of sections */
+  .md-typeset h1, .md-typeset h2, .md-typeset h3 {
+    page-break-after: avoid !important;
+  }
+
+  .md-typeset table, .md-typeset ul, .md-typeset ol {
+    page-break-inside: avoid !important;
+  }
+}
