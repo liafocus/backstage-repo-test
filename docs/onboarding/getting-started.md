@@ -1,5 +1,9 @@
 # Getting Started
 
+Welcome to the team!
+
+![Team photo](DSC01492.jpg)
+
 ## Prerequisites
 
 - Git
